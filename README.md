@@ -7,6 +7,7 @@ A collection of AI agent skills for working with [Kapa](https://www.kapa.ai).
 | Skill | Description |
 |-------|-------------|
 | [analyze-coverage-gaps](skills/analyze-coverage-gaps/) | Walk through documentation gaps flagged by Kapa together with your coding agent. Review each gap, decide whether it needs a fix, and fill it — all inside your documentation repository. |
+| [analyze-top-questions](skills/analyze-top-questions/) | Walk through the most frequently asked topics from Kapa together with your coding agent. Assess whether your documentation serves each topic well and improve it on the spot. |
 
 ## Installation
 

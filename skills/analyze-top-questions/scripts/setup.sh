@@ -2,7 +2,7 @@
 set -euo pipefail
 
 csv_file="${1:?Usage: setup.sh <csv_path>}"
-output_dir="coverage_gaps"
+output_dir="top_questions"
 
 mkdir -p "$output_dir/to_do" "$output_dir/done"
 
@@ -28,7 +28,6 @@ with open(csv_file) as f:
             clusters[cid] = {
                 'title': row['Cluster Title'],
                 'summary': row['Cluster Summary'],
-                'suggestion': row['Cluster Suggestion'],
                 'count': int(row['Cluster Thread Count']),
                 'unique_users': int(row.get('Cluster Unique Users', 0)),
                 'questions': [],
@@ -50,7 +49,6 @@ for i, cid in enumerate(order, 1):
         out.write(f"- **Thread Count:** {c['count']}\n")
         out.write(f"- **Unique Users:** {c['unique_users']}\n\n")
         out.write(f"## Summary\n{c['summary']}\n\n")
-        out.write(f"## Suggestion\n{c['suggestion']}\n\n")
         out.write(f"## Questions\n{questions}\n\n")
         out.write(f"## Analysis\n_To be filled in during review._\n\n")
         out.write(f"## Decision\n_To be filled in during review._\n")
