@@ -19,7 +19,7 @@ Work through topics where your documentation has no coverage and create the miss
 
 ### Analyze Top Questions
 
-Work through your most common topics and ensure your documentation covers all the angles in which users are asking about them. Your most common topics are obviously already documented. The question is whether your documentation covers them in the best possible way. Users may be approaching a topic from a different angle than how you have written about it, or explanations may not be clear enough to address what people really want to know.
+Go through your most common topics and ensure your documentation addresses all the ways users ask about them. Your most common topics are obviously already documented. The question is whether your documentation covers them in the best possible way. Users may be approaching a topic from a different angle than how you have written about it, or explanations may not be clear enough to address what people really want to know.
 
 1. Install the skill into your documentation repository by copying it into your agent's skills directory
 2. Export your [Top Questions](https://docs.kapa.ai/analytics/top-questions) for the time period you want to analyze
