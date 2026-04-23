@@ -1,6 +1,6 @@
 # kapa-skills
 
-A collection of AI agent skills for working with [Kapa](https://www.kapa.ai). These skills let you instruct your AI agents to work with Kapa data and capabilities using workflows recommended by the Kapa team.
+A collection of AI agent skills for working with [Kapa](https://www.kapa.ai). These skills let you instruct your AI agents to work with Kapa's data and capabilities using workflows recommended by the Kapa team.
 
 ## Skills
 
