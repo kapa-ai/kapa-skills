@@ -35,7 +35,7 @@ bash ${CLAUDE_SKILL_DIR}/scripts/setup.sh "$csv_path"
 
 Walk through each cluster one at a time. For each cluster:
 
-1. **Read the cluster** — show the user the title, summary, and questions.
+1. **Read the cluster** — show the user the title, summary, thread count, unique users, and questions. If the unique user count is low relative to the thread count, flag this to the user — it means a small number of people asked repeatedly rather than many users hitting the same gap.
 2. **Analyze the documentation** — search the docs in this repository to understand what is already documented about the topic. Check relevant pages, FAQs, and configuration references.
 3. **Present your assessment** to the user. Categorize it as one of:
    - **No action needed** — already documented, noise, or not a documentation issue
