@@ -8,6 +8,9 @@ A collection of AI agent skills for working with [Kapa](https://www.kapa.ai). Th
 |-------|-------------|
 | [Analyze Coverage Gaps](#analyze-coverage-gaps) | Work through topics where your documentation has no coverage and create the missing content. |
 | [Analyze Top Questions](#analyze-top-questions) | Work through your most common topics and ensure your documentation covers them well. |
+| [Answer RFP](#answer-rfp) | Answer incoming RFPs end-to-end using a kapa-powered MCP as the sole knowledge source. |
+| [Analyze Non-Deflected Tickets](#analyze-non-deflected-tickets) | Classify non-deflected support conversations, estimate your potential deflection rate, and generate a prioritized documentation action list. |
+| [Learn Mode](#learn-mode) | Teach company and product knowledge interactively using a kapa-powered MCP, with quiz, teach-first, true/false, Q&A, or auto-calibrated learning modes. |
 
 ### Analyze Coverage Gaps
 
@@ -24,6 +27,32 @@ Go through your most common topics and ensure your documentation addresses all t
 1. Install the skill into your documentation repository by copying it into your agent's skills directory
 2. Export your [Top Questions](https://docs.kapa.ai/analytics/top-questions) for the time period you want to analyze
 3. Invoke the skill with your AI agent from within your documentation repository: `/analyze-top-questions <csv_path>`
+
+### Answer RFP
+
+Answer incoming RFPs (and vendor questionnaires / security assessments) end-to-end using a kapa-powered MCP as the sole knowledge source. The skill guides the agent through a structured six-step workflow — upload, requirements extraction, capability mapping, drafting, compliance check, and file output — with three mandatory user checkpoints where your judgment shapes the response before the next step begins. All product capability claims are retrieved live from your kapa MCP; nothing is invented or assumed.
+
+1. Install the skill into your repository by copying it into your agent's skills directory
+2. Connect your kapa MCP server to your Claude session (kapa platform → Integrations → Hosted MCP Server)
+3. Invoke the skill with your AI agent: `/answer-rfp`
+4. Upload the RFP document when prompted and follow the guided workflow
+
+### Analyze Non-Deflected Tickets
+
+Classify your non-deflected support conversations, estimate your potential deflection rate, and generate a prioritized list of documentation improvements. The skill runs five phases — baseline counts, domain orientation, classification, summary, and documentation action list — and produces a classified CSV and a markdown report. When a kapa MCP is connected, each deflectable case is further typed as missing doc, outdated doc, or surfacing issue.
+
+1. Install the skill into your repository by copying it into your agent's skills directory
+2. Export your [support form deflector conversations](https://docs.kapa.ai/analytics/conversations#export-conversations) from the kapa platform
+3. Optionally connect your kapa MCP server for per-case documentation verification
+4. Invoke the skill with your AI agent: `/analyze-non-deflected-tickets <csv_path>`
+
+### Learn Mode
+
+Teach company and product knowledge interactively using live content retrieved from a kapa-powered MCP. The skill supports five learning modes — quiz, teach-first, true/false, Q&A, and auto-calibrated — and adapts to the user's expertise level throughout the session. Suited for onboarding new team members, sales enablement, and customer adoption. At the end of each session it can generate a `kapa-learn-memory.md` file the user can upload next time to resume exactly where they left off.
+
+1. Install the skill into your repository by copying it into your agent's skills directory
+2. Connect your kapa MCP server to your Claude session (kapa platform → Integrations → Hosted MCP Server)
+3. Invoke the skill with your AI agent: `/learn-mode`
 
 ## Compatibility
 
