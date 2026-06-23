@@ -8,6 +8,7 @@ A collection of AI agent skills for working with [Kapa](https://www.kapa.ai). Th
 |-------|-------------|
 | [Analyze Coverage Gaps](#analyze-coverage-gaps) | Work through topics where your documentation has no coverage and create the missing content. |
 | [Analyze Top Questions](#analyze-top-questions) | Work through your most common topics and ensure your documentation covers them well. |
+| [Analyze Source Analytics](#analyze-source-analytics) | Audit your most-cited documentation pages against the questions they were used to answer. |
 | [Answer RFP](#answer-rfp) | Answer incoming RFPs end-to-end using a kapa-powered MCP as the sole knowledge source. |
 
 ### Analyze Coverage Gaps
@@ -25,6 +26,14 @@ Go through your most common topics and ensure your documentation addresses all t
 1. Install the skill into your documentation repository by copying it into your agent's skills directory
 2. Export your [Top Questions](https://docs.kapa.ai/analytics/top-questions) for the time period you want to analyze
 3. Invoke the skill with your AI agent from within your documentation repository: `/analyze-top-questions <csv_path>`
+
+### Analyze Source Analytics
+
+Audit your most-cited documentation pages against the actual questions they were used to answer. For each highly-cited page, a subagent reviews how well the page serves those questions and recommends specific changes (add, clarify, restructure, cross-link, delete) backed by exact counts and verbatim user quotes. You walk through the findings interactively and decide what to act on.
+
+1. Install the skill into your documentation repository by copying it into your agent's skills directory
+2. Export your [Source Analytics](https://docs.kapa.ai/analytics/source-analytics#export-source-analytics) for the time period you want to analyze
+3. Invoke the skill with your AI agent from within your documentation repository: `/analyze-source-analytics <csv_path>`
 
 ### Answer RFP
 
