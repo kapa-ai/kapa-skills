@@ -10,6 +10,7 @@ A collection of AI agent skills for working with [Kapa](https://www.kapa.ai). Th
 | [Analyze Top Questions](#analyze-top-questions) | Work through your most common topics and ensure your documentation covers them well. |
 | [Analyze Source Analytics](#analyze-source-analytics) | Audit your most-cited documentation pages against the questions they were used to answer. |
 | [Answer RFP](#answer-rfp) | Answer incoming RFPs end-to-end using a kapa-powered MCP as the sole knowledge source. |
+| [Agent SDK Integration](#agent-sdk-integration) | Set up, improve, or migrate to the Kapa Agent SDK in your own application. |
 
 ### Analyze Coverage Gaps
 
@@ -43,6 +44,14 @@ Answer incoming RFPs (and vendor questionnaires / security assessments) end-to-e
 2. Connect your kapa MCP server to your Claude session (kapa platform → Integrations → Hosted MCP Server)
 3. Invoke the skill with your AI agent: `/answer-rfp`
 4. Upload the RFP document when prompted and follow the guided workflow
+
+### Agent SDK Integration
+
+Add a Kapa AI agent to your own application with the [Kapa Agent SDK](https://docs.kapa.ai/dev/agent), improve an existing integration, or migrate from the Kapa Chat SDK. The agent works interactively: it explores your codebase, decides whether to use the React or Core SDK, finds the API endpoints that make good agent tools and reasons through which to include with you, drafts custom instructions from your product, sets up server-side session authentication and (optionally) conversation history, and themes the chat to match your app. Nothing is invented: it grounds every detail in the installed package types and the official docs, and confirms each decision with you.
+
+1. Install the skill into your application repository by copying it into your agent's skills directory
+2. Set up an Agent integration in the [Kapa dashboard](https://app.kapa.ai) (Integrations → Agent) so you have a Project ID, Integration ID, and API key ready
+3. Invoke the skill with your AI agent from within your app repository: `/agent-sdk-integration`
 
 ## Compatibility
 
