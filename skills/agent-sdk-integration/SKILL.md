@@ -1,6 +1,6 @@
 ---
 name: agent-sdk-integration
-description: Set up, improve, or migrate to the Kapa Agent SDK (@kapaai/agent-react or @kapaai/agent-core) in a web application. Use when the user wants to add a Kapa AI agent or in-product assistant to their app, turn existing API endpoints into agent tools, review or improve an existing Kapa Agent SDK integration, or migrate from the Kapa Chat SDK (@kapaai/react-sdk) to the Agent SDK. Covers React and non-React apps, tool discovery, custom instructions, tool approval and custom rendering, session-token authentication, and conversation history.
+description: Set up, improve, or migrate to the Kapa Agent SDK (@kapaai/agent-react or @kapaai/agent-core), also referred to as the Kapa Agent Framework, in a web app. Always use this whenever a developer mentions the Kapa Agent SDK, the Kapa Agent Framework, or the packages @kapaai/agent-react or @kapaai/agent-core, however they phrase it. Also use it when they want to embed a Kapa AI agent, in-product assistant, or support chat into their app, turn their API endpoints into agent tools, add Kapa knowledge base search to their own UI, review or improve an existing setup, or migrate from the Kapa Chat SDK (@kapaai/react-sdk), even if they never say "Agent SDK" explicitly. Covers React and non-React apps, tool discovery, custom instructions, approval and custom rendering, session-token auth, and conversation history.
 ---
 
 # Kapa Agent SDK integration
